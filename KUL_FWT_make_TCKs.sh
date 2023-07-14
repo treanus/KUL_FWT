@@ -1134,7 +1134,7 @@ function make_bundle {
 
                 if [[ ! -f ${tck_filt1} ]]; then
 
-                    task_in="scil_filter_tractogram.py -f --reference ${subj_FA} ${drawn_incs_str} ${drawn_excs_str} ${auto_X_f} ${tck_init_rs} ${tck_filt1}"
+                    task_in="scil_filter_tractogram.py -f --reference ${subj_FA} ${drawn_incs_str} ${drawn_excs_str} ${auto_X_f} -v ${tck_init_rs} ${tck_filt1}"
 
                     task_exec
 

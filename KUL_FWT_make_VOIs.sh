@@ -4577,12 +4577,14 @@ for q in ${!tck_list[@]}; do
                 CSHDP_LT_excs_Ls=("CC_allr_custom" "hypothal_bildil_excr_custom" "BStem_FS" \
                 "Cing_lobeGM_LT" "Cing_lobeWM_LT" \
                 "Thal_LT_ero2_custom" \
-                "SFG_GM_LT_FS" "SFG_WM_LT_FS");
+                "SFG_GM_LT_FS" "SFG_WM_LT_FS" \
+                "SegWM_LT_ALIC_custom");
 
                 CSHDP_LT_excs_Is=("1" "1" "16" \
                 "1003" "3003" \
                 "1" \
-                "1028" "3028");
+                "1028" "3028" \ 
+                "1");
 
                 tck_VOIs_2seg="${tck_list[$q]}_excs" && make_VOIs
 
@@ -4603,12 +4605,14 @@ for q in ${!tck_list[@]}; do
                 CSHDP_RT_excs_Ls=("CC_allr_custom" "hypothal_bildil_excr_custom" "BStem_FS" \
                 "Cing_lobeGM_RT" "Cing_lobeWM_RT" \ 
                 "Thal_RT_ero2_custom" \
-                "SFG_GM_RT_FS" "SFG_WM_RT_FS");
+                "SFG_GM_RT_FS" "SFG_WM_RT_FS" \
+                "SegWM_RT_ALIC_custom");
 
                 CSHDP_RT_excs_Is=("1" "1" "16" \
                 "2003" "4003" \
                 "1" \
-                "2028" "4028");
+                "2028" "4028" \ 
+                "1");
                 
                 tck_VOIs_2seg="${tck_list[$q]}_excs" && make_VOIs
 

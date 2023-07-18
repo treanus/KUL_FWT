@@ -11,7 +11,6 @@ from nilearn import plotting
 import subprocess
 from io import StringIO
 from dipy.io.image import load_nifti, load_nifti_data, save_nifti
-from dipy.viz import actor, window, colormap as cmap
 
 # inputfile = '/media/rad/Data/DF_final/sub-S5_KUL_WBTCK_Seg_output/sub-S5_TCKs_output/CST_LT_output/QQ/CST_LT_fin_WB_iFOD2_rs50_segments_MNI.nii.gz'
 

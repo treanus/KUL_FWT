@@ -348,6 +348,11 @@ else
 
 fi
 
+if [[ ! "$a_flag" -eq 1 ]]; then
+    algo_f="iFOD2"
+fi
+
+
 # output sub-dirs
 
 TCKs_prepd="${output_d}/sub-${subj}${ses_str}_TCKs_prep"

@@ -6,32 +6,23 @@
 
 # following this example -> https://dipy.org/documentation/1.3.0./_downloads/e344c36d129dda8d2f2bcac50ee292fd/afq_tract_profiles.py/
 
-
 import nibabel as nib
 import numpy as np
 import os, sys, getopt, glob, re
 import scipy
 import dipy
 import dipy.stats.analysis as dsa
-import dipy.data as dpd
 import pkgutil
 import matplotlib
 import csv
 matplotlib.use('Qt5Agg')
 import matplotlib.pyplot as plt
-import dipy.tracking.streamline as dts
-from nilearn import plotting
 from dipy.tracking import utils
-from dipy.viz import actor, window, colormap as cmap
 from dipy.io.image import load_nifti, load_nifti_data, save_nifti
-from dipy.io.stateful_tractogram import Space, StatefulTractogram
 from dipy.io.streamline import load_tractogram, save_tractogram
-from dipy.io.utils import create_nifti_header, get_reference_info
-from dipy.segment.clustering import QuickBundles
-from dipy.segment.metric import AveragePointwiseEuclideanMetric, ResampleFeature
 
-# inputfile = '/media/rad/Data/DF_final/sub-DF_KUL_WBTCK_Seg_output/sub-DF_TCKs_output/CST_LT_output/QQ/tmp/CST_LT_fin_WB_iFOD2_inMNI_rTCK.tck'
-# mdir = '/media/rad/Data/DF_final/sub-DF_KUL_WBTCK_Seg_output/sub-DF_prep'
+# inputfile = '/media/KUL/DATA2/rad_dude/clinical_work/clinical_sub-EYZ/BIDS/derivatives/KUL_compute/sub-EYZ/FWT/sub-EYZ_TCKs_output/UF_LT_output/QQ/UF_LT_fin_BT_iFOD2_inMNI_rTCK.tck'
+# mdir = '/media/KUL/DATA2/rad_dude/clinical_work/clinical_sub-EYZ/BIDS/derivatives/KUL_compute/sub-EYZ/FWT/sub-EYZ_prep'
 
 def main(argv):
     inputfile = ''

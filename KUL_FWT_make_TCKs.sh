@@ -1497,6 +1497,7 @@ function make_bundle {
 # part 1 of this workflow is general purpose and should be run for all bundles
 # use processing control
 
+eval "$(conda shell.bash hook)"
 conda activate scilpy
 
 # find your priors

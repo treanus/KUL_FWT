@@ -1497,6 +1497,8 @@ function make_bundle {
 # part 1 of this workflow is general purpose and should be run for all bundles
 # use processing control
 
+conda activate scilpy
+
 # find your priors
 # all priors are in MNI space
 
@@ -2069,3 +2071,5 @@ elif [[ ! -z "${ROIs_d}/Part1.done" ]] && [[ ! -z "${ROIs_d}/Part2.done" ]]; the
     fi
 
 fi
+
+conda deactivate
